@@ -13,7 +13,7 @@ from enum import Enum
 # DEF_CHARTER_LAND_URL = "http://land.naver.com/article/articleList.nhn?rletTypeCd=A01&tradeTypeCd=B1&hscpTypeCd=A01&rletNo=110747"
 
 
-DEF_TRADING_LAND_BASE_URL = "http://land.naver.com/article/articleList.nhn?rletTypeCd=A01&tradeTypeCd={}&hscpTypeCd=A01&rletNo=110747"
+BASE_LAND_URL = "http://land.naver.com/article/articleList.nhn?rletTypeCd=A01&tradeTypeCd={}&hscpTypeCd=A01&rletNo=110747"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -196,5 +196,5 @@ def html_parser_scraping():
 
 # if __name__ == "__main__": html_parser_scraping()
 if __name__ == "__main__":
-    startScraping(DEF_TRADING_LAND_BASE_URL, TradeType.trading)
-    startScraping(DEF_TRADING_LAND_BASE_URL, TradeType.charter)
+    startScraping(BASE_LAND_URL, TradeType.trading)
+    startScraping(BASE_LAND_URL, TradeType.charter)
